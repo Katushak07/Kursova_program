@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="kursova1.Page8"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <StackLayout BackgroundColor="#FFE3CC">
+        <RelativeLayout>
+            <Frame
+                Margin="70,0"
+                Padding="15"
+                BackgroundColor="#FFC2B5"
+                CornerRadius="15"
+                HeightRequest="200"
+                RelativeLayout.YConstraint="170"
+                WidthRequest="250">
+                <StackLayout>
+                    <Entry
+                        x:Name="userInput10"
+                        HorizontalTextAlignment="Center"
+                        Placeholder="input you number" />
+                    <Label
+                        x:Name="ConvertLable1"
+                        Margin="0,20"
+                        FontSize="25"
+                        HorizontalOptions="Center"
+                        Text=" " />
+                    <Button
+                        x:Name="Convert8"
+                        Margin="0,0,0,20"
+                        BackgroundColor="#646C8F"
+                        Clicked="Convert8_Clicked"
+                        CornerRadius="15"
+                        HeightRequest="50"
+                        Text="Convert to octal"
+                        TextColor="#FFC2B5" />
+                </StackLayout>
+            </Frame>
+            <Frame
+                Margin="70,0"
+                Padding="0,5,0,15"
+                BackgroundColor="#FFC2B5"
+                CornerRadius="15"
+                HeightRequest="110"
+                RelativeLayout.YConstraint="30"
+                WidthRequest="280">
+                <StackLayout>
+                    <Image Source="imgnum8.png" WidthRequest="80" />
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="Title"
+                        HorizontalTextAlignment="Center"
+                        Text="octal numeral system"
+                        TextColor="#646C8F"
+                        WidthRequest="250" />
+
+                </StackLayout>
+            </Frame>
+
+            <Frame
+                Margin="70,0"
+                Padding="15"
+                BackgroundColor="#FFC2B5"
+                CornerRadius="15"
+                HeightRequest="200"
+                RelativeLayout.YConstraint="410"
+                WidthRequest="250">
+
+                <StackLayout>
+                    <Entry
+                        x:Name="userInput8"
+                        HorizontalTextAlignment="Center"
+                        Placeholder="input you number" />
+                    <Label
+                        x:Name="ConvertLabel2"
+                        Margin="0,20"
+                        FontSize="25"
+                        HorizontalOptions="Center"
+                        Text=" " />
+                    <Button
+                        x:Name="Convert10"
+                        Margin="0,0,0,20"
+                        BackgroundColor="#646C8F"
+                        Clicked="Convert10_Clicked"
+                        CornerRadius="15"
+                        HeightRequest="50"
+                        Text="Convert to decimal"
+                        TextColor="#FFC2B5" />
+                </StackLayout>
+            </Frame>
+
+        </RelativeLayout>
+        <Button
+            x:Name="Back8"
+            Margin="0,0,0,10"
+            BackgroundColor="#FFC2B5"
+            Clicked="Back8_Clicked"
+            CornerRadius="15"
+            FontSize="15"
+            HorizontalOptions="Center"
+            Text="Back to menu"
+            TextColor="#646C8F" />
+        <Label
+            Margin="0,0,0,10"
+            FontSize="15"
+            HorizontalOptions="Center"
+            Text="Product by Kloz Katerina 2I "
+            TextColor="#F2CED8" />
+    </StackLayout>
+
+</ContentPage>

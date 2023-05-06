@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="kursova_1.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <StackLayout BackgroundColor="#FFE3CC">
+        <RelativeLayout>
+            <Frame
+                Margin="70,0"
+                Padding="15"
+                BackgroundColor="#FFC2B5"
+                CornerRadius="15"
+                RelativeLayout.YConstraint="50">
+                <StackLayout>
+                    <Image Source="imgnum2.png" WidthRequest="100" />
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="Title"
+                        HorizontalTextAlignment="Center"
+                        Text="binary numeral system"
+                        TextColor="#646C8F"
+                        WidthRequest="250" />
+                    <Button
+                        x:Name="BinaryButton"
+                        BackgroundColor="#646C8F"
+                        CornerRadius="15"
+                        Text="Convert to binary"
+                        TextColor="#FFC2B5" 
+                        Clicked="BinaryButton_Clicked"
+                        />
+                </StackLayout>
+            </Frame>
+            <Frame
+                Margin="70,0"
+                Padding="15"
+                BackgroundColor="#FFC2B5"
+                CornerRadius="15"
+                RelativeLayout.YConstraint="290">
+                <StackLayout>
+                    <Image Source="imgnum8.png" WidthRequest="100" />
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="Title"
+                        HorizontalTextAlignment="Center"
+                        Text="octal numeral system"
+                        TextColor="#646C8F"
+                        WidthRequest="250" />
+                    <Button
+                        x:Name="OctalButton"
+                        BackgroundColor="#646C8F"
+                        CornerRadius="15"
+                        Text="Convert to octal"
+                        TextColor="#FFC2B5" 
+                        Clicked="OctalButton_Clicked"/>
+                </StackLayout>
+            </Frame>
+            <Frame
+                Margin="70,0"
+                Padding="15"
+                BackgroundColor="#FFC2B5"
+                CornerRadius="15"
+                RelativeLayout.YConstraint="530">
+                <StackLayout>
+                    <Image Source="imgnum16.png" WidthRequest="100" />
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="Large"
+                        HorizontalTextAlignment="Center"
+                        Text="hexadecimal number system"
+                        TextColor="#646C8F"
+                        WidthRequest="250" />
+                    <Button
+                        x:Name="HexadecimalButton"
+                        BackgroundColor="#646C8F"
+                        CornerRadius="15"
+                        Text="Convert to hexadecimal"
+                        TextColor="#FFC2B5"
+                        Clicked="HexadecimalButton_Clicked"/>
+                </StackLayout>
+            </Frame>
+        </RelativeLayout>
+        <Label
+            Margin="0,0,0,10"
+            FontSize="15"
+            HorizontalOptions="Center"
+            Text="Product by Kloz Katerina 2I "
+            TextColor="#F2CED8" />
+    </StackLayout>
+
+</ContentPage>
