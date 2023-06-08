@@ -20,31 +20,7 @@ namespace kursova1
             NavigationPage.SetHasNavigationBar(this, false);
 
         }
-        public static string ConvertToBase(int number, int baseNumber)
-        {
-            string result = "";
-
-            while (number > 0)
-            {
-                int remainder = number % baseNumber;
-
-                if (remainder < 10)
-                {
-                    result = remainder.ToString() + result;
-                }
-                else
-                {
-                    char digit = (char)('A' + (remainder - 10));
-                    result = digit + result;
-                }
-
-                number /= baseNumber;
-            }
-
-            return result;
-        }
-
-       
+           
 
         private async void Back8_Clicked(object sender, EventArgs e)
         {
